@@ -1,0 +1,234 @@
+
+
+1. Installed the react file in VS code
+	open New Terminal 
+		1. npx create-react-app.
+
+	after Instaling this file 
+		*. npm  i react-router-dom  react-icons sass
+			(Basic uses of sass) 
+
+
+2. deleting the unwanted file except App.js and index.js 
+
+3. delete the some data from index.js 
+
+4. import some data from the vs code	
+	i.) import { Router, BrowserRouter as router } from "react-router-dom";
+	
+	after that I add a <Router> and in Router I add <Routes> and in it I add <Route /> (With closeing tag)
+	We Are using Routing method in the project
+
+5. I create a three folder in src 
+	i) Create a New folder in 'src' with the name of "Assests" Where I put the photos and some other files
+
+	ii)  After Assests I Create a "component" folder in src file 
+
+	iii)  3rd folder creating a Style in src ( In Style Folder are only "sass" files)
+
+6. make some files in the project
+	i) create a 'App.scss' and 'colors.scss', "header.scss",  "Home.scss" in the style folder
+	
+		i)  in App.scss I add some font from "fonts.google.com" like Roboto and add some fonts from there and copy the Import file 
+		     and paste in the 'app.scss' file.
+
+		ii)  In "colors.scss" just add some colors data . 
+			create some variable for a webpage like '$first : ;, $second : ;, $third : ;' And so on
+
+7. Create Header.jsx file in component 
+		i) in header.jsx I create a component and add in 'App.js' before 'Routes' <Header/> with clossing tag
+
+		ii) add import file of 'App.scss' and ' header.scss' in App.js 
+		
+		iii) when we adding of header file so we add some NavBar (<nav> tag)and in NavBar creating 'H1 Tag (<h1>)' and add some name like 		       "NewEarth" and creating main component (<main>) and in main tag adding the link when we want.
+
+		iv) then add some Link file (<Link>) like Home ,Contact, about, Brand, Services. ( Note: '#' use for connecting the data)
+
+		v)  After that I make a some colors for Header file in "header.scss".
+		        i) import the colors file with use (@) . it prefered in scss.  (@import "colors";)
+		        ii) make a 'nav' component in header.scss 
+		vi) In the 'Nav' component impliment 'h1' direct style. ( text-transform :uppercase).
+
+		vii) In 'nav' after 'h1' add 'main'  and in Main adding 'anchor tag' style and manage ':hover' effect in anchor tag. 
+		        In 'Anchor tag' ':hover' effect are included
+
+8. Create Home.jsx file in component
+
+		i) add path in Route and element in 'App.js" ( <Route path="/" element={ <Home />} />)
+		    and Import file in 'App.jsx"   ( import Home from "./component/Home";) & ( import "./styles/Home.scss")  
+		
+		ii)  In "Home.jsx" file make a 'Div Tag" in div tag add some classes and ID ( <div className="Home") 
+		      and in 'Div tag' add 'Main tag'. In 'main tag add 'H1 tag' and 'passage tag' (<p>).
+			
+			<div className="Home">
+			       <main>
+				<h1>NewEarth<h1/>
+				<p> Solution to your problem<p>
+			       <main/>
+			<div/>
+	
+		iii)  after that add Import file in 'Home.scss'  ( @import "colors";)
+			add '.home' component to adding the data. In ".home" component create ">main" component 
+			and in main component create 'h1' & 'P' tag
+	
+		iv) after outside of 'main' component making the Pseudo-components '&::before' use for changing the background
+
+		v) make new 'Div Tag' in 'Home.jsx' in return component.
+		      In this 'Div tag' add image source file ( <img src={vg} alt="Graphics" />)
+		
+		vi) In this 'Div Tag' create new '<div>' after 'Image tag'. 
+		      And that 'Div tag' add passage (<p>)
+
+		vii) In 'Home.scss' file add new component name with ".home2".
+		         In '.Home2' component add '>img' component. after '>img tag' create a 'Div tag' in ".home" component.
+		           In "div' component adding " passage" (>p) component
+		
+		viii) after '.home' component we adding '@KeyFrame imgUP' for animations
+
+		ix) after that I created third 'Div tag' in Home.jsx . in Div tag also one div tag creating. and in this div I add 'h1 tag' and 
+		     'passage (<p>) tag' createing
+
+		x) for New 'Home3 Div tag' need a decoration so I add '.home3' component in 'Home.scss' and in '.home3' component
+		     make new '>div' comoponent for that block.
+
+		xi) In 'Div' css component add 'h1' and 'p" section in '.home3' for Div block. add some italic font.
+
+		xii) Now I make fourth 'Div tag' in "home.jsx". In this 'Div tag' I added another "div tag" in this div adding 'h1' tag. 
+			after closing 'h1' tag i added 'artical Tag' (<articale>). in this artical Tag. I add another 'div tag' for special block.
+	
+		xiii) so for that block need some icons. so for that icon I added a import file with react icons. like I addedGgoogle, Youtube, 
+		        Instagarm, and last one is Amazon icons. so for that I need to add Ai fucntion of all the thing
+	
+		      ( import {AiFillGoogleCircle, AiFillAmazonCircle, AiFillYoutube, AiFillInstagram} from "react-icons/ai")
+		       
+		xiv)  so in inner 'Div tag' I added icons of the project. so one of type called is rapper also.
+		
+		xv) so adding all the icons in artical in 'div tag'. ( <div style={{animationDelay: 0.3s}}> <AiYoutube/> <p>Youtube<p>).
+		       and this artical "Home.jsx' work done now need to goes 'Home.scss' file to give them style.
+
+		xvi) now create '.home4' component in "home.scss" for styling for working this icons and animation properly.
+		        In '.home4' componant need a block to make all the icons in one block. so for that I add 'div' component into the 
+		         '.home4' component.. In div tag adding some heading tag like adding 'h1' style for the font of brand name.
+		Xv) after 'h1' style done need to create some . artical (.artical) component. This artical is use besically we make some "div tag" in 		       "home4" component (youtube, insta, amazon, google), so this 'div' are look like circle. so for that thing we adding some styles.
+			So in the Artical component we create 'div' component for that makeover of this icons as a special blocks.
+		         so for give this block effect add hover effect (&:hover) in 'div' component.
+		Xvi) For better Icons I add a svg (Scalable Vector Graphics) and some massages for for that Add '>p" component.
+
+
+9) I am facing some issue when I try to click on webpage in contact section and after that click on about section the page are reloading.
+      so for that need to download a package for linking the page without reloading.
+	
+     Open New Terminal 
+	
+		i) installed new Pacakge
+		    npm i react-router-hash-link
+
+    		ii)  after Installing this pacakge add import file in 'header.jsx' file
+		      ( import {HashLink} from "react-router-hash-link" ) and 	( import "./styles/footer.scss";) 
+
+		iii)  We need to footer so. I just creating "Footer.jsx" file and import to the "App.js".
+		      After that I need to styleing footer create new "footer.scss" file.
+	
+		iv) For footer. I need to add two main block (create "div tag")
+			so in first "footer tag" (<footer>) need to add 1st "div tag" and in this div tag and "h1 tag" for some importent works.
+			and after that "headling tag" making a "paragraph tag" (<p>);
+
+		v) in next block (2nd "Div tag") add 'heading tag" (<h5>) and after heading making sub "div tag" into this tag adding "anchor tag" for 
+		    linking the web pages of Youtube, Amazon, Google, Instagarm.
+
+		vi) now add some style for styling the footer.
+		      for that need to import the file in "footer.scss" (@import "color")
+			in the footer.scss file adding footer element to arranging and styling the footer.
+	
+		vii) In footer element adding some "div " for making a blocks for links.
+		         In the div element making new heading (h1) , paragraph (p) and heading (h5) int the footer.scss file
+
+		viii) for arranging properly footer link element need to add some block to give them one side. so I create one more give in the main "div 		       effect" and in this element add some archor style and for effecting add hover pseudo-effect (&:hover)
+		      
+			There footer work is done . so now I added some contact data with working 
+
+
+10) Adding new Import file for the Contact option. 	
+		
+		i) creating new "contect.jsx" file in component folder. and also making "contact.scss"
+		
+		ii) add import file in "contact.jsx" , "contact.scss" and give router path  in App.js
+		     (import Contact from "./component/Contact";)
+		     (import "./styles/contact.scss";) 
+		     (<Route path="/contact" element={<Contact />} />	)
+
+		iii) after next I make some 'contact.jsx' file to working a function. So I create "div tag" for making a block
+		     in div tag I added "main tag"for heading (h1 tag) and making the form ( form tag).
+
+		iv)  In form tag I added "div tag" for creating block of form. And in div tag added "label tag" and
+		      adding "input tag" to geeting the data from the user.
+		       Make three input data from the usser . like Name, Email, Message.
+		       and after that Adding button to submit the data.
+
+
+11) Adding some stle in contact section
+		i) in "contact.scss" adding some import file. (import from the style colors) 
+		   @import "color";
+		ii) for contact page styling/makover. I added .contact class, main class, form class in form class adding Div class block
+		      in the "contact.scss"
+			
+			Contact data is end here
+
+12) now the Services function
+		
+		i) For services function need to download a package 
+		     ( npm i react-responsive-carousel )
+		
+		ii) After Installing Packages I added some import file in "App.js" for jx, scss & Route
+		      (import Services from "./component/Services";)
+		     (import "./styles/contact.scss";)
+		      ( <Route path="/services" element={<Services/>}/>)
+
+		iii) In Services.jsx adding some Import files from the Packages
+			(import React from 'react';)
+			(import { Carousel } from 'react-responsive-carousel';)
+			(import "react-responsive-carousel/lib/styles/carousel.min.css";)
+			(import img1 from "../assets/3.jpg";)
+			(import img2 from "../assets/4.jpg";)
+
+		iv) In the Services.jsx making. I added a "div tag" for block of element and in this Div I add a "Carousel tag" with Infinite loop.
+		     for image scroll infinte time.In "carousel tag" I add 2 div to with the img template for showing which services I give it.
+
+		v). In "Carousel Tag" I added some function like arrows not showing.page number now showing & auto play withing 1.5Seconds. 
+	                         Also i added not showing the the thumbs in services page then I added ShowThumb in false postions.
+		     (<Carousel infiniteLoop autoPlay showStatus={false} showArrows={false} interval={1500}>)
+
+		The Services function are done here. So next with MediaQueries.
+
+13) Media Qeries.
+	
+		i) I added the scss file in style. name with "mediaquery.scss"
+		
+		ii) I adding all the media's file in "mediaquery.scss" file. for working in all the platform. like Desktop. Ipad. mobiles
+
+		iii) So I added in this file to the media of Ipad air @media screen and( max-width:820px).
+		       first I make with '.home' classes. Managing all the height and after that I adding some main and h1 file in '.contact' classes
+		        to look better in contact section. (Ipad air arrangement finish here)
+		
+		iv) After that I try to managing web page with phones so I added again @media screen file and adujust/suitable with phone.
+		          i) I manage all the home page function look better so I sepearatly adding the stuff on the home page.
+	                                like home1, home2, home3, home4. (home page end)
+		         ii) After that I arranging the contact page for look better so I adding '.contact' class and in contact class manage main and form 
+		              look better	(contact page code end)	
+		         iii) after that For footer looks proper I adding '.footer' class in Mediaqueries.scss file.
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
